@@ -1,0 +1,10 @@
+replicas: 2
+image:
+  repository: butinovnp/kubtask
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30002
+containerPort: 8080
